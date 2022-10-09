@@ -1,11 +1,11 @@
 package org.example;
 
 
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
 public class TriangleTest {
     public Triangle triangle = new Triangle();
@@ -27,7 +27,7 @@ public class TriangleTest {
     @Test
     public void shouldNotReturnCorrectAreaOfTriangle() {
         double area = triangle.Area();
-        Assert.assertNotEquals(99, area, 0);
+        assertNotEquals(99, area, 0);
     }
 
     @Test
