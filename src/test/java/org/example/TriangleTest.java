@@ -20,7 +20,7 @@ public class TriangleTest {
     @Test
     public void shouldReturnAreaOfTriangle() {
         double area = triangle.Area();
-        assertEquals(30, area,0);
+        assertEquals(30, area, 0);
     }
 
     @Test
