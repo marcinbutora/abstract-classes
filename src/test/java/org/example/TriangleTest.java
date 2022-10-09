@@ -1,6 +1,7 @@
 package org.example;
 
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -21,6 +22,12 @@ public class TriangleTest {
     public void shouldReturnAreaOfTriangle() {
         double area = triangle.Area();
         assertEquals(30, area, 0);
+    }
+
+    @Test
+    public void shouldNotReturnCorrectAreaOfTriangle() {
+        double area = triangle.Area();
+        Assert.assertNotEquals(99, area, 0);
     }
 
     @Test

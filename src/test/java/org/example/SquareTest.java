@@ -18,6 +18,12 @@ public class SquareTest {
     }
 
     @Test
+    public void shouldNotReturnCorrectAreaOfSquare() {
+        double area = square.Area();
+        Assert.assertNotEquals(99, area, 0);
+    }
+
+    @Test
     public void shouldReturnPerimeterOfSquare() {
         double perimeter = square.Perimeter();
         Assert.assertEquals(40, perimeter, 0);
